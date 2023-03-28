@@ -13,6 +13,8 @@
 		CF6D0A5229D1BF2F00FF2C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D0A5029D1BF2F00FF2C19 /* Main.storyboard */; };
 		CF6D0A5429D1BF3100FF2C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6D0A5329D1BF3100FF2C19 /* Assets.xcassets */; };
 		CF6D0A5729D1BF3100FF2C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D0A5529D1BF3100FF2C19 /* LaunchScreen.storyboard */; };
+		CF6D0A5F29D1BF5600FF2C19 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D0A5E29D1BF5600FF2C19 /* Drink.swift */; };
+		CFC5D0B829D1CAFE008263C2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5D0B729D1CAFE008263C2 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CF6D0A5329D1BF3100FF2C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF6D0A5629D1BF3100FF2C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6D0A5829D1BF3100FF2C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6D0A5E29D1BF5600FF2C19 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		CFC5D0B729D1CAFE008263C2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				CF6D0A4A29D1BF2F00FF2C19 /* AppDelegate.swift */,
 				CF6D0A4C29D1BF2F00FF2C19 /* SceneDelegate.swift */,
 				CF6D0A4E29D1BF2F00FF2C19 /* ViewController.swift */,
+				CFC5D0B729D1CAFE008263C2 /* NetworkManager.swift */,
 				CF6D0A5029D1BF2F00FF2C19 /* Main.storyboard */,
+				CF6D0A5E29D1BF5600FF2C19 /* Drink.swift */,
 				CF6D0A5329D1BF3100FF2C19 /* Assets.xcassets */,
 				CF6D0A5529D1BF3100FF2C19 /* LaunchScreen.storyboard */,
 				CF6D0A5829D1BF3100FF2C19 /* Info.plist */,
@@ -140,6 +146,8 @@
 			files = (
 				CF6D0A4F29D1BF2F00FF2C19 /* ViewController.swift in Sources */,
 				CF6D0A4B29D1BF2F00FF2C19 /* AppDelegate.swift in Sources */,
+				CFC5D0B829D1CAFE008263C2 /* NetworkManager.swift in Sources */,
+				CF6D0A5F29D1BF5600FF2C19 /* Drink.swift in Sources */,
 				CF6D0A4D29D1BF2F00FF2C19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +301,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kniga.AlcoholDrinks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +332,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Kirill-Kniga.AlcoholDrinks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
